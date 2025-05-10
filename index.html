@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drypto Demo</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Drypto Demo Trading</h1>
+    <div>
+      <p>Balance: <span id="balance">$--</span></p>
+      <p>BTC Price: <span id="btc-price">--</span></p>
+      <p>ETH Price: <span id="eth-price">--</span></p>
+    </div>
+
+    <form id="trade-form">
+      <select id="symbol">
+        <option value="BTCUSDT">BTC</option>
+        <option value="ETHUSDT">ETH</option>
+      </select>
+      <select id="side">
+        <option value="buy">Buy</option>
+        <option value="sell">Sell</option>
+      </select>
+      <input type="number" id="amount" placeholder="Amount in USD" required />
+      <button type="submit">Place Trade (20x)</button>
+    </form>
+
+    <pre id="response"></pre>
+  </body>
+</html>
